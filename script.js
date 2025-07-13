@@ -1,10 +1,21 @@
 let startTime;
 let isPlaying = false;
 
-const quote = "The quick brown fox jumps over the lazy dog.";
+const quotes = [
+  "The quick brown fox jumps over the lazy dog.",
+  "Typing fast takes practice and patience.",
+  "JavaScript makes websites interactive and fun.",
+  "Coding is like solving a puzzle with logic.",
+  "Never stop learning and keep building things."
+];
+
+let quote = ""; // this will hold the one random quote
+
 const quoteDisplay = document.getElementById("quote");
 const inputBox = document.getElementById("input");
 const result = document.getElementById("result");
+const feedback = document.getElementById("feedback");
+
 
 function startTest() {
   if (isPlaying) return;
@@ -14,12 +25,16 @@ function startTest() {
   inputBox.disabled = false;
   inputBox.focus();
   result.textContent = "";
+  
+  quote = quotes[Math.floor(Math.random() * quotes.length)];
   quoteDisplay.textContent = quote;
+  
   startTime = new Date().getTime();
 }
 
 inputBox.addEventListener("input", () => {
-  if (inputBox.value === quote) {
+  if (inputBox.value.trim().toLowerCase() === quote.toLowerCase()) {
+
     const endTime = new Date().getTime();
     const timeTaken = (endTime - startTime) / 1000; // in seconds
     const words = quote.split(" ").length;
@@ -30,3 +45,13 @@ inputBox.addEventListener("input", () => {
     isPlaying = false;
   }
 });
+
+function resetTest() {
+  isPlaying = false;
+  inputBox.value = "";
+  inputBox.disabled = true;
+  result.textContent = "";
+  feedback.textContent = "";
+  quoteDisplay.textContent = "Click 'Start' to begin";
+}
+
