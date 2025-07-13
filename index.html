@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My First Website</title>
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>HALLOOOOOOO</h1>
-    <p>long journey to go padawan</p>
-        <button onclick="sayHi()">Click Me!</button>
+    <h1>Typing Speed Tester</h1>
+    
+    <p id="quote">Click "Start" to begin</p>
+    
+    <textarea id="input" placeholder="Start typing here..." disabled></textarea>
+    
+    <div class="buttons">
+      <button onclick="startTest()">Start</button>
+    </div>
 
-    <script>
-      function sayHi() {
-        alert("Hello from JavaScript! 🚀");
-      }
-    </script>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
   </body>
 </html>
+

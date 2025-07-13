@@ -1,2 +1,3 @@
 # help
-my first website bruh
+Typing test
+
