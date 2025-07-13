@@ -2,11 +2,13 @@ let startTime;
 let isPlaying = false;
 
 const quotes = [
-  "The quick brown fox jumps over the lazy dog.",
-  "Typing fast takes practice and patience.",
-  "JavaScript makes websites interactive and fun.",
-  "Coding is like solving a puzzle with logic.",
-  "Never stop learning and keep building things."
+  "baro will you marry me",
+  "rishon? is that how you spell it",
+  "rihaan sweats at rocket league its not that deep bro",
+  "mari likes men and wants to like your feet",
+  "I love Arjun habibi",
+  "Never gonna give you up never gonna let you down",
+  "Ayaan is so autistic",
 ];
 
 let quote = ""; // this will hold the one random quote
