@@ -5,7 +5,7 @@ const quotes = [
   "baro will you marry me",
   "rishon? is that how you spell it",
   "rihaan sweats at rocket league its not that deep bro",
-  "mari likes men and wants to like your feet",
+  "mari likes men and wants to lick your feet",
   "I love Arjun habibi",
   "Never gonna give you up never gonna let you down",
   "Ayaan is so autistic",
